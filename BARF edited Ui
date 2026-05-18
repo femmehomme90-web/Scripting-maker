@@ -1,6 +1,6 @@
 -- Script for : https://www.roblox.com/fr/games/126884695634066/Grow-a-Garden
 
-local VoidUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/femmehomme90-web/VoidUI/refs/heads/main/voidUI.lua"))()
+local VoidUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/femmehomme90-web/Scripting-maker/refs/heads/main/VoidUi-test"))()
 if VoidUI.SetScriptName then VoidUI:SetScriptName("Grow a Garden script") end
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
