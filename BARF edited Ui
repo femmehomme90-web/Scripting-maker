@@ -4,7 +4,7 @@
 -- Enable Auto-Collect to sell your crates every 2 minutes.
 
 local VoidUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/femmehomme90-web/VoidUI/refs/heads/main/voidUI.lua"))()
-VoidUI:SetScriptName("Grow a Garden script")
+VoidUI:SetScriptName("EditedUi")
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
