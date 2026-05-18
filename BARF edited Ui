@@ -104,16 +104,16 @@ local shopScrollFrame = Players.LocalPlayer.PlayerGui.MainUI.Menus.GearShopFrame
 local function getShopItems()
     local items = {}
     for _, child in ipairs(shopScrollFrame:GetChildren()) do
-        if child:IsA("Frame") then
+        if child:IsA("ImageLabel") then
             local gearName  = child:FindFirstChild("GearName")
             local gearImage = child:FindFirstChild("GearImage")
-            local imgLabel  = gearImage and gearImage:FindFirstChildOfClass("ImageLabel")
+            local imgLabel  = gearImage and gearImage:FindFirstChild("ImageLabel")
             local rarLabel  = gearImage and gearImage:FindFirstChild("Rarity")
             if gearName and imgLabel then
                 table.insert(items, {
                     Name      = gearName.Text,
                     Icon      = imgLabel.Image,
-                    StockLabel = rarLabel,  -- ref live pour lire le stock
+                    StockLabel = rarLabel,  -- live ref to read stock
                 })
             end
         end
